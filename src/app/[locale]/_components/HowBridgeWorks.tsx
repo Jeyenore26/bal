@@ -1,9 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-// components/HowBridgeWorks.tsx
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, type ReactNode } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  type MotionValue,
+} from "framer-motion";
+import { useRef, type JSX, type ReactNode } from "react";
 
 interface TimelineItem {
   title: string;
@@ -15,12 +19,13 @@ interface HowBridgeWorksProps {
   items: TimelineItem[];
 }
 
-const HowBridgeWorks = ({ items }: HowBridgeWorksProps) => {
+const HowBridgeWorks = ({ items }: HowBridgeWorksProps): JSX.Element => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start center", "end center"],
-  });
+  const { scrollYProgress }: { scrollYProgress: MotionValue<number> } =
+    useScroll({
+      target: containerRef,
+      offset: ["start center", "end center"],
+    });
 
   return (
     <div className="relative bg-white py-16" ref={containerRef}>
@@ -68,7 +73,7 @@ const HowBridgeWorks = ({ items }: HowBridgeWorksProps) => {
         <div className="relative z-10 space-y-24">
           {items.map((item, index) => (
             <TimelineItem
-              key={index}
+              key={`timeline-item-${index}`} // Ensure unique key
               item={item}
               index={index}
               scrollProgress={scrollYProgress}
@@ -84,8 +89,7 @@ const HowBridgeWorks = ({ items }: HowBridgeWorksProps) => {
 interface TimelineItemProps {
   item: TimelineItem;
   index: number;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  scrollProgress: any;
+  scrollProgress: MotionValue<number>; // Explicitly type scrollProgress
   totalItems: number;
 }
 
@@ -94,7 +98,7 @@ const TimelineItem = ({
   index,
   scrollProgress,
   totalItems,
-}: TimelineItemProps) => {
+}: TimelineItemProps): JSX.Element => {
   const itemStart = index / totalItems;
   const itemEnd = (index + 1) / totalItems;
 
@@ -137,7 +141,7 @@ const TimelineItem = ({
             <div>
               <h3 className="text-lg font-bold text-gray-800">{item.title}</h3>
               {item.description.map((desc, descIndex) => (
-                <p key={descIndex} className="mt-2 text-gray-600">
+                <p key={`desc-${descIndex}`} className="mt-2 text-gray-600">
                   {desc}
                 </p>
               ))}

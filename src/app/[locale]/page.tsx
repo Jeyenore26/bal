@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import MainScreen from "./_components/MainScreen";
 import NavBar from "@/components/container/NavBar";
 import HowBrdigeWorks from "./_components/HowBridgeWorks";
@@ -12,7 +11,6 @@ import ContactUs from "./_components/Contactus";
 import Footer from "./_components/Footer";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
   const timelineItems = [
     {
       title: "Freelancer Profile Submission",
