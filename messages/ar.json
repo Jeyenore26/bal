@@ -1,0 +1,21 @@
+{
+  "HomePage": {
+    "title": "Hello world!2",
+    "about": "Go to the about page"
+  },
+  "LanguageOption": {
+    "en": "الانجليزية",
+    "ar": "العربية"
+  },
+  "NavLinks": {
+    "Home": "الرئيسية",
+    "About Us": "معلومات عنا",
+    "How It Work": "كيف يعمل",
+    "Get Started": "ابدا الان",
+    "Contact Us": "اتصل بنا"
+  },
+  "MainScreen": {
+    "BAL": "بناء تحقيق قيادة",
+    "description": "الجسر بين المواهب والفرص. نحن نساعدك في العثور على الوظيفة المناسبة والمواهب المناسبة."
+  }
+}

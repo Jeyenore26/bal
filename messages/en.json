@@ -1,0 +1,21 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "LanguageOption": {
+    "en": "English",
+    "ar": "Arabic"
+  },
+  "NavLinks": {
+    "Home": "Home",
+    "About Us": "About Us",
+    "How It Work": "How It Work",
+    "Get Started": "Get Started",
+    "Contact Us": "Contact Us"
+  },
+  "MainScreen": {
+    "BAL": "BUILD ACHIEVE LEAD",
+    "description": "The bridge between talents and opportunities. We help you find the right job and the right talent."
+  }
+}
