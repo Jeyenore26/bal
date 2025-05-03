@@ -24,7 +24,7 @@ export default function HomePage() {
       icon: <GrUserWorker className="text-[#497e74]" />,
     },
     {
-      title: t("cards.cards2.title"),
+      title: t("cards.card2.title"),
       description: [
         t("cards.card2.description1"),
         t("cards.card2.description2"),
