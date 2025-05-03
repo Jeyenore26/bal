@@ -9,7 +9,7 @@
   },
   "NavLinks": {
     "Home": "Home",
-    "About Us": "About Us",
+    "Why Us": "Why Us",
     "How It Work": "How It Work",
     "Get Started": "Get Started",
     "Contact Us": "Contact Us"
@@ -17,5 +17,70 @@
   "MainScreen": {
     "BAL": "BUILD ACHIEVE LEAD",
     "description": "The bridge between talents and opportunities. We help you find the right job and the right talent."
+  },
+  "ContactUs": {
+    "title": "Contact Us",
+    "description": "            Get in touch with our team for any inquiries",
+    "send": "Send Us a Message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "subject": "Subject",
+    "sendMessage": "Send Message"
+  },
+  "WhyUs": {
+    "title": "Why Us",
+    "description": "            Discover the benefits that set us apart from the competition",
+    "cards": {
+      "card1": {
+        "title": "Lower Fees",
+        "description": "We offer lower fees than traditional recruitment agencies."
+      },
+      "card2": {
+        "title": "Local Partnership",
+        "description": "Local partnership with the best companies in your region."
+      },
+      "card3": {
+        "title": "Fewer Competitors",
+        "description": "Competitors are not as many as in other regions."
+      },
+      "card4": {
+        "title": "Easy To Use",
+        "description": "User-friendly platform for job seekers and employers."
+      }
+    }
+  },
+  "StartNow": {
+    "title": "Unlock Your Potential",
+    "description": " We connect exceptional talent with life-changing opportunities.Whether you&apos;re looking to grow your career or find the perfect candidate, we make it happen.",
+    "button": "Get Started"
+  },
+  "Bridge": {
+    "title": "How Our Bridge Works",
+    "cards": {
+      "card1": {
+        "title": "Freelancer Profile Submission",
+        "description1": "The freelancer provides their GitHub username and type down their best project.",
+        "description2": "They have the option to add their score from trusted, industryrecognized rating platforms (e.g., Frontend Mentor, Kaggle, Topcoder, etc.)."
+      },
+      "card2": {
+        "title": "AI-Powered Nexus Score Calculation",
+        "description1": "Our AI evaluates the freelancer’s technical skills, project quality, and platform ratings to generate a Nexus Score.",
+        "description2": "This score is dynamically adjusted based on: ",
+        "description3": "▪ Performance metrics from linked platforms.",
+        "description4": "▪ Client ratings from past projects."
+      },
+      "card3": {
+        "title": "Getting the Recommended Companies",
+        "description1": "It suggests companies that align with your expertise and career goals.",
+        "description2": "Provides recommended wage ranges based on industry standards and your qualifications."
+      },
+      "card4": {
+        "title": "Select Your Preferred Company",
+        "description1": "The system automatically drafts a customized proposal for your chosen company, saving you time while ensuring professionalism. You can review and edit it before sending.",
+        "description2": "Once finalized, you can easily reach out and submit your application directly through the platform.",
+        "description3": "The AI may also recommend the best way to approach the company (e.g., email, platform message, or portfolio link) to increase your chances of success."
+      }
+    }
   }
 }

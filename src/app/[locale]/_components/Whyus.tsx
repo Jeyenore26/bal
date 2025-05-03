@@ -2,27 +2,29 @@ import { Card } from "@/components/ui/card";
 import React from "react";
 import { HandCoins, Handshake, TrendingDown } from "lucide-react";
 import { FaHandHoldingMedical } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 export default function Whyus() {
+  const t = useTranslations("WhyUs");
   const cards = [
     {
-      title: "Lower Fees",
-      description: "We offer lower fees than traditional recruitment agencies.",
+      title: t("cards.card1.title"),
+      description: t("cards.card1.description"),
       icon: <HandCoins className="h-6 w-6" />,
     },
     {
-      title: "Local Partnership",
-      description: "Local partnership with the best companies in your region.",
+      title: t("cards.card2.title"),
+      description: t("cards.card2.description"),
       icon: <Handshake className="h-6 w-6" />,
     },
     {
-      title: "Fewer Competitors",
-      description: "Competitors are not as many as in other regions.",
+      title: t("cards.card3.title"),
+      description: t("cards.card3.description"),
       icon: <TrendingDown className="h-6 w-6" />,
     },
     {
-      title: "Easy To Use",
-      description: "User-friendly platform for job seekers and employers.",
+      title: t("cards.card4.title"),
+      description: t("cards.card4.description"),
       icon: <FaHandHoldingMedical className="h-6 w-6" />,
     },
   ];
@@ -32,10 +34,10 @@ export default function Whyus() {
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold text-[#2d5b53] md:text-4xl lg:text-5xl">
-            Why Choose Us?
+            {t("title")}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-            Discover the benefits that set us apart from the competition
+            {t("description")}
           </p>
         </div>
 

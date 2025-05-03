@@ -9,41 +9,44 @@ import StartNow from "./_components/StartNow";
 import Whyus from "./_components/Whyus";
 import ContactUs from "./_components/Contactus";
 import Footer from "./_components/Footer";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
+  const t = useTranslations("Bridge");
+
   const timelineItems = [
     {
-      title: "Freelancer Profile Submission",
+      title: t("cards.card1.title"),
       description: [
-        "The freelancer provides their GitHub username and type down their best project.",
-        "They have the option to add their score from trusted, industryrecognized rating platforms (e.g., Frontend Mentor, Kaggle, Topcoder, etc.).",
+        t("cards.card1.description1"),
+        t("cards.card1.description2"),
       ],
       icon: <GrUserWorker className="text-[#497e74]" />,
     },
     {
-      title: "AI-Powered Nexus Score Calculation",
+      title: t("cards.cards2.title"),
       description: [
-        "Our AI evaluates the freelancer’s technical skills, project quality, and platform ratings to generate a Nexus Score.",
-        "This score is dynamically adjusted based on: ",
-        "▪ Performance metrics from linked platforms.",
-        " ▪ Client ratings from past projects.",
+        t("cards.card2.description1"),
+        t("cards.card2.description2"),
+        t("cards.card2.description3"),
+        t("cards.card2.description4"),
       ],
       icon: <LuBrainCog className="text-[#497e74]" />,
     },
     {
-      title: "Getting the Recommended Companies",
+      title: t("cards.card3.title"),
       description: [
-        "It suggests companies that align with your expertise and career goals.",
-        "Provides recommended wage ranges based on industry standards and your qualifications.",
+        t("cards.card3.description1"),
+        t("cards.card3.description2"),
       ],
       icon: <FaDoorOpen className="text-[#497e74]" />,
     },
     {
-      title: "Select Your Preferred Company",
+      title: t("cards.card4.title"),
       description: [
-        "The system automatically drafts a customized proposal for your chosen company, saving you time while ensuring professionalism. You can review and edit it before sending.",
-        "Once finalized, you can easily reach out and submit your application directly through the platform.",
-        "The AI may also recommend the best way to approach the company (e.g., email, platform message, or portfolio link) to increase your chances of success.",
+        t("cards.card4.description1"),
+        t("cards.card4.description2"),
+        t("cards.card4.description3"),
       ],
       icon: <FiCheckCircle className="text-[#497e74]" />,
     },
@@ -56,6 +59,11 @@ export default function HomePage() {
           <MainScreen />
         </section>
         <section id="how-it-works">
+          <div className="container mx-auto">
+            <h2 className="mb-16 text-center text-5xl font-bold text-gray-800">
+              How Our Bridge Works
+            </h2>
+          </div>
           <HowBrdigeWorks items={timelineItems} />
         </section>
         <section id="get-started" className="w-full">

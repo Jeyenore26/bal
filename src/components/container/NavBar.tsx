@@ -17,7 +17,12 @@ export default function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <nav
       className={cn(
@@ -38,7 +43,6 @@ export default function NavBar() {
         />
         <NavLinks />
         <div className="flex w-[120px] items-center justify-center gap-5">
-          <CircleUserRound className="hover:cursor-pointer" />
           <LanguageOption />
         </div>
       </div>

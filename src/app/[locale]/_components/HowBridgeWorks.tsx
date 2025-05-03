@@ -30,10 +30,6 @@ const HowBridgeWorks = ({ items }: HowBridgeWorksProps): JSX.Element => {
   return (
     <div className="relative bg-white py-16" ref={containerRef}>
       <div className="container mx-auto px-4">
-        <h2 className="mb-16 text-center text-5xl font-bold text-gray-800">
-          How Our Bridge Works
-        </h2>
-
         <div className="absolute top-0 left-1/2 hidden h-full w-0.5 -translate-x-1/2 transform bg-gray-300 md:block" />
         <div className="absolute top-0 left-6 h-full w-0.5 bg-gray-300 md:hidden" />
 
